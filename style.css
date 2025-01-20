@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", serif;
+}
+:root{
+    ---first-color:orange;
+    ---second-color:skyblue;
+    ---font-color:#ffffff
+}
+
+/* primary selection starts here  */
+p{}
+h1{}
+h2{
+    font-size: 2rem;
+}
+h3{}
+
+
+
+
+/* nav-bar starts here   */
+#bar{
+    display: none;
+}
+.nav-container{
+    width: 84vw;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+.nav-middle >ul{
+    display: flex;
+    list-style: none;
+    column-gap: 2rem;
+    padding-top: 1rem;
+}
+
+#nav-li1{
+    color: var(---first-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+#nav-li2{
+    color: var(---second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+#nav-li3{
+    color:rgb(5, 212, 223);
+    font-size: 20px;
+    font-weight: 500;
+}
+#nav-li4{
+    color: rgb(93, 88, 239);
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-btn {
+    align-content: center;
+    background-color: var(---first-color);
+    color: var(---font-color);
+    padding: 10px 60px;
+    border-radius: 12px;
+    margin: 6px 0;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:576px) {
+.nav-container{
+    width: 95vw;
+}
+.nav-middle,.nav-btn{
+    display: none;
+}
+#bar{
+    display: inline;
+    
+
+}
+.div-bar{
+    margin-top: .5rem;
+    padding:.5rem;
+}
+}
