@@ -15,14 +15,20 @@ body{
 }
 
 /* primary selection starts here  */
-p{}
+/* p{
+    padding-bottom: 2rem;
+    opacity: .7;
+} */
 h1{
     font-size: 3.5rem;
 }
 h2{
     font-size: 2rem;
 }
-h3{}
+h3{
+    padding: 2rem 0;
+    font-size: 25px;
+}
 
 .btn-primary{
     background-color: rgb(17, 17, 17);
@@ -107,7 +113,74 @@ h3{}
 #vision{
     color: var(---second-color);
 }
+/* curriculum section starts here  */
+.curriculum-container{
+    background-image: url(assets/bg.png);
+    width: 84vw;
+    margin: 7rem auto;
+}
+.curriculum-head{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.curriculum-description{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    column-gap: 30px;
+    text-align: center;
+}
+.curriculum-data{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    padding: 40px 25px;
+}
+.curriculum-data p{
+    padding-bottom: 2rem;
+    opacity: .7;
+    font-size: 15px;
+}
+.kinder{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.elementary{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.middle{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+#read1{
+    color: var(---second-color);
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+#read2{
+    color: var(---first-color);
+    font-weight: bold;
+}
+#read3{
+    color: rgb(135, 0, 255);
+    padding-top: 1rem;
+    font-weight: bold;
+}
 
+
+
+.curriculum-btn{
+    text-align: center;
+    padding: 60px 0;
+    
+}
+.curriculum-btn button{
+    background-color: var(---first-color);
+    font-size: 50px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    color: var(---font-color);
+    margin-left: 1rem;
+}
 
 
 
@@ -131,6 +204,10 @@ h3{}
 @media  screen and (max-width:576px) {
 .nav-container{
     width: 95vw;
+    
+}
+header{
+    border: 0.5px solid rgb(254, 163, 1);
 }
 .nav-middle,.nav-btn{
     display: none;
@@ -166,6 +243,19 @@ h3{}
     
 }
 .banner-description p br {
+    display: none;
+}
+.curriculum-container{
+    width: 95vw;
+}
+.curriculum-head{
+    margin-bottom: -2rem;
+}
+.curriculum-description{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 2rem;
+}
+.curriculum-btn{
     display: none;
 }
 }
