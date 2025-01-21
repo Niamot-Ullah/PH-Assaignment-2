@@ -384,7 +384,13 @@ header{
     font-weight: 500;
     padding: 6px 0;
     border-radius: 47px;
+}
+.time2,.time3{
     top: 100px;
+    left: 24px;
+}
+.time4,.time5{
+    top: 105px;
     left: 24px;
 }
 .extra{
