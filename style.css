@@ -318,6 +318,15 @@ footer{
     padding-right: .5rem;
 }
 
+/* marquee section starts here  */
+.marquee-container{
+    background-color: var(---second-color);
+    padding: 1rem 0;
+    color: var(---font-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 
 
 
