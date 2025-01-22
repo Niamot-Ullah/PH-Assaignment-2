@@ -39,6 +39,17 @@ h3{
     font-weight: bold;
     margin-top: 2rem;
 }
+li,
+button,
+.footer-three img,
+#read1,#read2,#read3{
+    cursor: pointer;
+}
+button:hover,.curriculum-btn button:hover{
+    background-color: #5e5656
+}
+
+
 
 
 /* nav-bar starts here   */
@@ -278,7 +289,34 @@ h3{
     padding: 2rem 0 3rem 0;
 }
 
+/* footer section starts here  */
+footer{
+    background-color: var(---second-color);
+    color: var(---font-color);
+}
+.footer-container{
+    width: 84vw;
+    margin:-7rem auto;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-one{
 
+}
+.footer-one>div{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.footer-two ul li{
+    list-style: none;
+    padding-bottom: 1rem;
+}
+.footer-three img{
+    padding-right: .5rem;
+}
 
 
 
@@ -298,6 +336,7 @@ h3{
 
 
 @media  screen and (max-width:576px) {
+
 .nav-container{
     width: 95vw;
     
@@ -386,11 +425,11 @@ header{
     border-radius: 47px;
 }
 .time2,.time3{
-    top: 100px;
+    top: 6.20rem;
     left: 24px;
 }
 .time4,.time5{
-    top: 105px;
+    top: 6.6rem;
     left: 24px;
 }
 .extra{
@@ -398,7 +437,16 @@ header{
     font-size: 10px;
 }
 
-
+/* footer  */
+.footer-container{
+    width: 95vw;
+    margin:-7rem auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-top:3rem ;
+    
+}
 
 
 }
